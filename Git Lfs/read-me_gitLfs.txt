@@ -1,0 +1,11 @@
+Setting up Git Large File Storage
+1.download extension (only need to do once)
+	git lfs install
+2.Select the file types you'd like Git LFS to manage (or directly edit your .gitattributes). You can configure additional file extensions at anytime.
+	git lfs track "*.psd"
+Make sure .gitattributes is tracked
+	git add .gitattributes
+3.There is no step three. Just commit and push to GitHub as you normally would.
+	git add file.psd
+	git commit -m "Add design file"
+	git push origin master
